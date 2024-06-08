@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modelos
 {
-    public class UserStatus
+    public class AccesoLogin
     {
         public bool acceso { get; set; }
     }

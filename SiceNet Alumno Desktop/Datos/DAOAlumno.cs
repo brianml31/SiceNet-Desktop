@@ -23,7 +23,7 @@ namespace Datos
                 if (result.respuestaJson!=null)
                 {
                     JsonDeserializer deserializerJson = new JsonDeserializer();
-                    UserStatus userStatus = deserializerJson.deserializarJsonAccesoLogin(result.respuestaJson);
+                    AccesoLogin userStatus = deserializerJson.deserializarJsonAccesoLogin(result.respuestaJson);
                     return userStatus.acceso;
                 }
                 else {

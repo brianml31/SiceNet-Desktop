@@ -12,9 +12,9 @@ namespace Datos
     {
         //Deserializado por el paquete nuget (Newtonsoft.Json )
 
-        public UserStatus deserializarJsonAccesoLogin(string json)
+        public AccesoLogin deserializarJsonAccesoLogin(string json)
         {
-            return JsonConvert.DeserializeObject<UserStatus>(json);
+            return JsonConvert.DeserializeObject<AccesoLogin>(json);
         }
 
         public AlumnoAcademico deserializarJsonInfoAlumno(string json)
