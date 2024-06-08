@@ -15,5 +15,6 @@ namespace Modelos
         public int cdtosAcumulados { get; set; }
         public int cdtosActuales { get; set; }
         public int semActual { get; set; }
+        public string carrera { get; set; }
     }
 }

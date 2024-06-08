@@ -28,37 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.lblSG = new MaterialSkin.Controls.MaterialLabel();
             this.lblITS = new MaterialSkin.Controls.MaterialLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblITSUR = new System.Windows.Forms.Label();
             this.btnIniciarSesion = new MaterialSkin.Controls.MaterialButton();
             this.txtNoControl = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtContrasena = new MaterialSkin.Controls.MaterialTextBox2();
             this.lblNoControl = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.checkLoginAutomatico = new MaterialSkin.Controls.MaterialCheckbox();
-            this.materialCard1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.materialCard2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // materialCard1
-            // 
-            this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard1.Controls.Add(this.lblSG);
-            this.materialCard1.Controls.Add(this.lblITS);
-            this.materialCard1.Controls.Add(this.pictureBox1);
-            this.materialCard1.Controls.Add(this.lblITSUR);
-            this.materialCard1.Depth = 0;
-            this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(17, 78);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
-            this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(555, 125);
-            this.materialCard1.TabIndex = 0;
             // 
             // lblSG
             // 
@@ -66,7 +49,7 @@
             this.lblSG.Depth = 0;
             this.lblSG.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblSG.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.lblSG.Location = new System.Drawing.Point(265, 58);
+            this.lblSG.Location = new System.Drawing.Point(364, 48);
             this.lblSG.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblSG.Name = "lblSG";
             this.lblSG.Size = new System.Drawing.Size(166, 24);
@@ -79,33 +62,13 @@
             this.lblITS.Depth = 0;
             this.lblITS.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblITS.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.lblITS.Location = new System.Drawing.Point(197, 34);
+            this.lblITS.Location = new System.Drawing.Point(296, 24);
             this.lblITS.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblITS.Name = "lblITS";
             this.lblITS.Size = new System.Drawing.Size(301, 24);
             this.lblITS.TabIndex = 2;
             this.lblITS.Text = "Instituto Tecnológico Superior del";
             this.lblITS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.logo_itsur;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 92);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lblITSUR
-            // 
-            this.lblITSUR.AutoSize = true;
-            this.lblITSUR.Font = new System.Drawing.Font("Arial", 16.75F);
-            this.lblITSUR.Location = new System.Drawing.Point(175, 34);
-            this.lblITSUR.Name = "lblITSUR";
-            this.lblITSUR.Size = new System.Drawing.Size(0, 26);
-            this.lblITSUR.TabIndex = 0;
-            this.lblITSUR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnIniciarSesion
             // 
@@ -114,7 +77,7 @@
             this.btnIniciarSesion.Depth = 0;
             this.btnIniciarSesion.HighEmphasis = true;
             this.btnIniciarSesion.Icon = null;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(233, 430);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(310, 486);
             this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnIniciarSesion.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnIniciarSesion.Name = "btnIniciarSesion";
@@ -136,7 +99,7 @@
             this.txtNoControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNoControl.HideSelection = true;
             this.txtNoControl.LeadingIcon = null;
-            this.txtNoControl.Location = new System.Drawing.Point(135, 242);
+            this.txtNoControl.Location = new System.Drawing.Point(212, 298);
             this.txtNoControl.MaxLength = 32767;
             this.txtNoControl.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNoControl.Name = "txtNoControl";
@@ -164,7 +127,7 @@
             this.txtContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtContrasena.HideSelection = true;
             this.txtContrasena.LeadingIcon = null;
-            this.txtContrasena.Location = new System.Drawing.Point(135, 320);
+            this.txtContrasena.Location = new System.Drawing.Point(212, 376);
             this.txtContrasena.MaxLength = 32767;
             this.txtContrasena.MouseState = MaterialSkin.MouseState.OUT;
             this.txtContrasena.Name = "txtContrasena";
@@ -188,7 +151,7 @@
             this.lblNoControl.AutoSize = true;
             this.lblNoControl.Depth = 0;
             this.lblNoControl.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lblNoControl.Location = new System.Drawing.Point(137, 217);
+            this.lblNoControl.Location = new System.Drawing.Point(214, 273);
             this.lblNoControl.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblNoControl.Name = "lblNoControl";
             this.lblNoControl.Size = new System.Drawing.Size(80, 19);
@@ -200,7 +163,7 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(137, 295);
+            this.materialLabel1.Location = new System.Drawing.Point(214, 351);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(82, 19);
@@ -211,7 +174,7 @@
             // 
             this.checkLoginAutomatico.AutoSize = true;
             this.checkLoginAutomatico.Depth = 0;
-            this.checkLoginAutomatico.Location = new System.Drawing.Point(192, 377);
+            this.checkLoginAutomatico.Location = new System.Drawing.Point(269, 433);
             this.checkLoginAutomatico.Margin = new System.Windows.Forms.Padding(0);
             this.checkLoginAutomatico.MouseLocation = new System.Drawing.Point(-1, -1);
             this.checkLoginAutomatico.MouseState = MaterialSkin.MouseState.HOVER;
@@ -223,34 +186,67 @@
             this.checkLoginAutomatico.Text = "Iniciar Automaticamente";
             this.checkLoginAutomatico.UseVisualStyleBackColor = true;
             // 
+            // materialCard2
+            // 
+            this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard2.Controls.Add(this.lblSG);
+            this.materialCard2.Controls.Add(this.lblITS);
+            this.materialCard2.Controls.Add(this.pictureBox2);
+            this.materialCard2.Controls.Add(this.label1);
+            this.materialCard2.Depth = 0;
+            this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard2.Location = new System.Drawing.Point(17, 78);
+            this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard2.Name = "materialCard2";
+            this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard2.Size = new System.Drawing.Size(718, 163);
+            this.materialCard2.TabIndex = 9;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::GUI.Properties.Resources.logo_itsur;
+            this.pictureBox2.Location = new System.Drawing.Point(17, 16);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(136, 130);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 16.75F);
+            this.label1.Location = new System.Drawing.Point(175, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 26);
+            this.label1.TabIndex = 0;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(589, 475);
+            this.ClientSize = new System.Drawing.Size(745, 551);
+            this.Controls.Add(this.materialCard2);
             this.Controls.Add(this.checkLoginAutomatico);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.lblNoControl);
             this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.txtNoControl);
             this.Controls.Add(this.btnIniciarSesion);
-            this.Controls.Add(this.materialCard1);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SiceNet Alumno Desktop";
-            this.materialCard1.ResumeLayout(false);
-            this.materialCard1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.materialCard2.ResumeLayout(false);
+            this.materialCard2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private MaterialSkin.Controls.MaterialCard materialCard1;
-        private System.Windows.Forms.Label lblITSUR;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private MaterialSkin.Controls.MaterialLabel lblITS;
         private MaterialSkin.Controls.MaterialButton btnIniciarSesion;
         private MaterialSkin.Controls.MaterialLabel lblSG;
@@ -259,6 +255,9 @@
         private MaterialSkin.Controls.MaterialLabel lblNoControl;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialCheckbox checkLoginAutomatico;
+        private MaterialSkin.Controls.MaterialCard materialCard2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

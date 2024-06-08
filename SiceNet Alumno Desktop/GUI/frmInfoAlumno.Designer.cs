@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.lblNoControl = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.lblNombreAlumno = new MaterialSkin.Controls.MaterialLabel();
             this.lblBienvenido = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblITSUR = new System.Windows.Forms.Label();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
+            this.lblFechaHora = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.lbl1 = new MaterialSkin.Controls.MaterialLabel();
             this.lbl2 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
-            this.lblFechaHora = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
-            this.lblNoControl = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.lblEspecialidad = new MaterialSkin.Controls.MaterialLabel();
-            this.lblCreditosReunidos = new MaterialSkin.Controls.MaterialLabel();
-            this.lblCreditosActuales = new MaterialSkin.Controls.MaterialLabel();
             this.lblSemestreActual = new MaterialSkin.Controls.MaterialLabel();
+            this.lblCreditosActuales = new MaterialSkin.Controls.MaterialLabel();
+            this.lblCreditosReunidos = new MaterialSkin.Controls.MaterialLabel();
+            this.lblEspecialidad = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.materialCard2.SuspendLayout();
@@ -72,6 +72,32 @@
             this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard1.Size = new System.Drawing.Size(555, 125);
             this.materialCard1.TabIndex = 0;
+            // 
+            // lblNoControl
+            // 
+            this.lblNoControl.AutoSize = true;
+            this.lblNoControl.Depth = 0;
+            this.lblNoControl.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblNoControl.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblNoControl.Location = new System.Drawing.Point(266, 94);
+            this.lblNoControl.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblNoControl.Name = "lblNoControl";
+            this.lblNoControl.Size = new System.Drawing.Size(73, 17);
+            this.lblNoControl.TabIndex = 4;
+            this.lblNoControl.Text = "000000000";
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel5.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.materialLabel5.Location = new System.Drawing.Point(177, 94);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(80, 17);
+            this.materialLabel5.TabIndex = 3;
+            this.materialLabel5.Text = "No. Control: ";
             // 
             // lblNombreAlumno
             // 
@@ -136,6 +162,31 @@
             this.materialCard2.Size = new System.Drawing.Size(555, 75);
             this.materialCard2.TabIndex = 1;
             // 
+            // lblFechaHora
+            // 
+            this.lblFechaHora.AutoSize = true;
+            this.lblFechaHora.Depth = 0;
+            this.lblFechaHora.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblFechaHora.Location = new System.Drawing.Point(212, 43);
+            this.lblFechaHora.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblFechaHora.Name = "lblFechaHora";
+            this.lblFechaHora.Size = new System.Drawing.Size(131, 19);
+            this.lblFechaHora.TabIndex = 1;
+            this.lblFechaHora.Text = "00/00/0000|00:00";
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel3.Location = new System.Drawing.Point(176, 14);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(201, 24);
+            this.materialLabel3.TabIndex = 0;
+            this.materialLabel3.Text = "Fecha de reinscripcion";
+            // 
             // lbl1
             // 
             this.lbl1.AutoSize = true;
@@ -162,19 +213,6 @@
             this.lbl2.TabIndex = 2;
             this.lbl2.Text = "Cdts. Reunidos:";
             // 
-            // materialLabel3
-            // 
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel3.Location = new System.Drawing.Point(176, 14);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(201, 24);
-            this.materialLabel3.TabIndex = 0;
-            this.materialLabel3.Text = "Fecha de reinscripcion";
-            // 
             // materialCard3
             // 
             this.materialCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -197,108 +235,18 @@
             this.materialCard3.Size = new System.Drawing.Size(555, 168);
             this.materialCard3.TabIndex = 3;
             // 
-            // lblFechaHora
+            // lblSemestreActual
             // 
-            this.lblFechaHora.AutoSize = true;
-            this.lblFechaHora.Depth = 0;
-            this.lblFechaHora.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lblFechaHora.Location = new System.Drawing.Point(212, 43);
-            this.lblFechaHora.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblFechaHora.Name = "lblFechaHora";
-            this.lblFechaHora.Size = new System.Drawing.Size(131, 19);
-            this.lblFechaHora.TabIndex = 1;
-            this.lblFechaHora.Text = "00/00/0000|00:00";
-            // 
-            // materialLabel4
-            // 
-            this.materialLabel4.AutoSize = true;
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel4.Location = new System.Drawing.Point(198, 14);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(170, 24);
-            this.materialLabel4.TabIndex = 2;
-            this.materialLabel4.Text = "Estatus academico";
-            // 
-            // materialLabel5
-            // 
-            this.materialLabel5.AutoSize = true;
-            this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel5.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.materialLabel5.Location = new System.Drawing.Point(177, 94);
-            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(80, 17);
-            this.materialLabel5.TabIndex = 3;
-            this.materialLabel5.Text = "No. Control: ";
-            // 
-            // lblNoControl
-            // 
-            this.lblNoControl.AutoSize = true;
-            this.lblNoControl.Depth = 0;
-            this.lblNoControl.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblNoControl.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.lblNoControl.Location = new System.Drawing.Point(266, 94);
-            this.lblNoControl.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblNoControl.Name = "lblNoControl";
-            this.lblNoControl.Size = new System.Drawing.Size(73, 17);
-            this.lblNoControl.TabIndex = 4;
-            this.lblNoControl.Text = "000000000";
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.materialLabel1.Location = new System.Drawing.Point(32, 104);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(97, 17);
-            this.materialLabel1.TabIndex = 3;
-            this.materialLabel1.Text = "Cdts. Actuales:";
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.materialLabel2.Location = new System.Drawing.Point(48, 132);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(81, 17);
-            this.materialLabel2.TabIndex = 4;
-            this.materialLabel2.Text = "Sem. Actual:";
-            // 
-            // lblEspecialidad
-            // 
-            this.lblEspecialidad.AutoSize = true;
-            this.lblEspecialidad.Depth = 0;
-            this.lblEspecialidad.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblEspecialidad.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.lblEspecialidad.Location = new System.Drawing.Point(145, 47);
-            this.lblEspecialidad.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblEspecialidad.Name = "lblEspecialidad";
-            this.lblEspecialidad.Size = new System.Drawing.Size(46, 17);
-            this.lblEspecialidad.TabIndex = 5;
-            this.lblEspecialidad.Text = "#####";
-            // 
-            // lblCreditosReunidos
-            // 
-            this.lblCreditosReunidos.AutoSize = true;
-            this.lblCreditosReunidos.Depth = 0;
-            this.lblCreditosReunidos.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblCreditosReunidos.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.lblCreditosReunidos.Location = new System.Drawing.Point(145, 76);
-            this.lblCreditosReunidos.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblCreditosReunidos.Name = "lblCreditosReunidos";
-            this.lblCreditosReunidos.Size = new System.Drawing.Size(46, 17);
-            this.lblCreditosReunidos.TabIndex = 6;
-            this.lblCreditosReunidos.Text = "#####";
+            this.lblSemestreActual.AutoSize = true;
+            this.lblSemestreActual.Depth = 0;
+            this.lblSemestreActual.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblSemestreActual.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblSemestreActual.Location = new System.Drawing.Point(145, 132);
+            this.lblSemestreActual.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblSemestreActual.Name = "lblSemestreActual";
+            this.lblSemestreActual.Size = new System.Drawing.Size(46, 17);
+            this.lblSemestreActual.TabIndex = 8;
+            this.lblSemestreActual.Text = "#####";
             // 
             // lblCreditosActuales
             // 
@@ -313,18 +261,70 @@
             this.lblCreditosActuales.TabIndex = 7;
             this.lblCreditosActuales.Text = "#####";
             // 
-            // lblSemestreActual
+            // lblCreditosReunidos
             // 
-            this.lblSemestreActual.AutoSize = true;
-            this.lblSemestreActual.Depth = 0;
-            this.lblSemestreActual.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblSemestreActual.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.lblSemestreActual.Location = new System.Drawing.Point(145, 132);
-            this.lblSemestreActual.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblSemestreActual.Name = "lblSemestreActual";
-            this.lblSemestreActual.Size = new System.Drawing.Size(46, 17);
-            this.lblSemestreActual.TabIndex = 8;
-            this.lblSemestreActual.Text = "#####";
+            this.lblCreditosReunidos.AutoSize = true;
+            this.lblCreditosReunidos.Depth = 0;
+            this.lblCreditosReunidos.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblCreditosReunidos.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblCreditosReunidos.Location = new System.Drawing.Point(145, 76);
+            this.lblCreditosReunidos.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblCreditosReunidos.Name = "lblCreditosReunidos";
+            this.lblCreditosReunidos.Size = new System.Drawing.Size(46, 17);
+            this.lblCreditosReunidos.TabIndex = 6;
+            this.lblCreditosReunidos.Text = "#####";
+            // 
+            // lblEspecialidad
+            // 
+            this.lblEspecialidad.AutoSize = true;
+            this.lblEspecialidad.Depth = 0;
+            this.lblEspecialidad.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblEspecialidad.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblEspecialidad.Location = new System.Drawing.Point(145, 47);
+            this.lblEspecialidad.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblEspecialidad.Name = "lblEspecialidad";
+            this.lblEspecialidad.Size = new System.Drawing.Size(46, 17);
+            this.lblEspecialidad.TabIndex = 5;
+            this.lblEspecialidad.Text = "#####";
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.materialLabel2.Location = new System.Drawing.Point(48, 132);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(81, 17);
+            this.materialLabel2.TabIndex = 4;
+            this.materialLabel2.Text = "Sem. Actual:";
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.materialLabel1.Location = new System.Drawing.Point(32, 104);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(97, 17);
+            this.materialLabel1.TabIndex = 3;
+            this.materialLabel1.Text = "Cdts. Actuales:";
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel4.Location = new System.Drawing.Point(198, 14);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(170, 24);
+            this.materialLabel4.TabIndex = 2;
+            this.materialLabel4.Text = "Estatus academico";
             // 
             // frmInfoAlumno
             // 
