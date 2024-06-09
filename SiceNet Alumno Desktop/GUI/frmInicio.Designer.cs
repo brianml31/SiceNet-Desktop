@@ -53,12 +53,18 @@
             this.lblITSUR = new System.Windows.Forms.Label();
             this.tabCardex = new System.Windows.Forms.TabPage();
             this.lblCarrera = new MaterialSkin.Controls.MaterialLabel();
+            this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
+            this.lblCardex = new MaterialSkin.Controls.MaterialLabel();
+            this.btnGenerarCardex = new MaterialSkin.Controls.MaterialButton();
+            this.materialListView1 = new MaterialSkin.Controls.MaterialListView();
             this.TabsControlDrawer.SuspendLayout();
             this.tabInfoAlumno.SuspendLayout();
             this.materialCard3.SuspendLayout();
             this.materialCard2.SuspendLayout();
             this.materialCard1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabCardex.SuspendLayout();
+            this.materialCard4.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabsControlDrawer
@@ -377,6 +383,8 @@
             // 
             // tabCardex
             // 
+            this.tabCardex.Controls.Add(this.materialListView1);
+            this.tabCardex.Controls.Add(this.materialCard4);
             this.tabCardex.Location = new System.Drawing.Point(4, 22);
             this.tabCardex.Name = "tabCardex";
             this.tabCardex.Padding = new System.Windows.Forms.Padding(3);
@@ -398,6 +406,72 @@
             this.lblCarrera.TabIndex = 6;
             this.lblCarrera.Text = "#####";
             // 
+            // materialCard4
+            // 
+            this.materialCard4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard4.Controls.Add(this.btnGenerarCardex);
+            this.materialCard4.Controls.Add(this.lblCardex);
+            this.materialCard4.Depth = 0;
+            this.materialCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard4.Location = new System.Drawing.Point(14, 14);
+            this.materialCard4.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard4.Name = "materialCard4";
+            this.materialCard4.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard4.Size = new System.Drawing.Size(696, 107);
+            this.materialCard4.TabIndex = 0;
+            // 
+            // lblCardex
+            // 
+            this.lblCardex.AutoSize = true;
+            this.lblCardex.Depth = 0;
+            this.lblCardex.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblCardex.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.lblCardex.Location = new System.Drawing.Point(288, 10);
+            this.lblCardex.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblCardex.Name = "lblCardex";
+            this.lblCardex.Size = new System.Drawing.Size(108, 41);
+            this.lblCardex.TabIndex = 0;
+            this.lblCardex.Text = "Cardex";
+            // 
+            // btnGenerarCardex
+            // 
+            this.btnGenerarCardex.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGenerarCardex.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnGenerarCardex.Depth = 0;
+            this.btnGenerarCardex.HighEmphasis = true;
+            this.btnGenerarCardex.Icon = null;
+            this.btnGenerarCardex.Location = new System.Drawing.Point(255, 61);
+            this.btnGenerarCardex.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnGenerarCardex.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnGenerarCardex.Name = "btnGenerarCardex";
+            this.btnGenerarCardex.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnGenerarCardex.Size = new System.Drawing.Size(177, 36);
+            this.btnGenerarCardex.TabIndex = 1;
+            this.btnGenerarCardex.Text = "Generar cardex PDF";
+            this.btnGenerarCardex.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnGenerarCardex.UseAccentColor = false;
+            this.btnGenerarCardex.UseVisualStyleBackColor = true;
+            // 
+            // materialListView1
+            // 
+            this.materialListView1.AutoSizeTable = false;
+            this.materialListView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialListView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.materialListView1.Depth = 0;
+            this.materialListView1.FullRowSelect = true;
+            this.materialListView1.HideSelection = false;
+            this.materialListView1.Location = new System.Drawing.Point(14, 129);
+            this.materialListView1.MinimumSize = new System.Drawing.Size(200, 100);
+            this.materialListView1.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialListView1.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialListView1.Name = "materialListView1";
+            this.materialListView1.OwnerDraw = true;
+            this.materialListView1.Size = new System.Drawing.Size(200, 100);
+            this.materialListView1.TabIndex = 1;
+            this.materialListView1.UseCompatibleStateImageBehavior = false;
+            this.materialListView1.View = System.Windows.Forms.View.Details;
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -417,6 +491,9 @@
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabCardex.ResumeLayout(false);
+            this.materialCard4.ResumeLayout(false);
+            this.materialCard4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -448,6 +525,10 @@
         private MaterialSkin.Controls.MaterialLabel lbl_4;
         private MaterialSkin.Controls.MaterialLabel lbl_2;
         private MaterialSkin.Controls.MaterialLabel lblCarrera;
+        private MaterialSkin.Controls.MaterialListView materialListView1;
+        private MaterialSkin.Controls.MaterialCard materialCard4;
+        private MaterialSkin.Controls.MaterialButton btnGenerarCardex;
+        private MaterialSkin.Controls.MaterialLabel lblCardex;
     }
 }
 
