@@ -59,5 +59,32 @@ namespace Datos
                 return null;
             }
         }
+
+
+        public async Task<AlumnoAcademico> getAllKardexConPromedio(HttpClient cliente, CookieContainer cookieContainer)
+        {
+            string uri = DatosConexion.urlBase + "/ws/wsalumnos.asmx/getAllKardexConPromedioByAlumno?aluLineamiento=1";
+            HttpResponseMessage respuesta = await cliente.GetAsync(uri);
+            if (respuesta.IsSuccessStatusCode)
+            {
+                string cuerpoRespuesta = await respuesta.Content.ReadAsStringAsync();
+                XmlStringDeserializer deserializer = new XmlStringDeserializer();
+                XmlString result = deserializer.Deserialize(cuerpoRespuesta);
+                if (result.respuestaJson != null)
+                {
+                    JsonDeserializer deserializerJson = new JsonDeserializer();
+                    AlumnoAcademico alumnoacademico = deserializerJson.deserializarJsonInfoAlumno(result.respuestaJson);
+                    return alumnoacademico;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

@@ -21,5 +21,10 @@ namespace Datos
         {
             return JsonConvert.DeserializeObject<AlumnoAcademico>(json);
         }
+
+        public KardexConPromedio deserializarJsonKardex(string json)
+        {
+            return JsonConvert.DeserializeObject<KardexConPromedio>(json);
+        }
     }
 }
