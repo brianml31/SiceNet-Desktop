@@ -79,5 +79,39 @@ namespace GUI.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
+        ///&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+        ///&lt;head&gt;
+        ///    &lt;title&gt;Plantilla Kardex&lt;/title&gt;
+        ///    &lt;style&gt;
+        ///        body {
+        ///            font-family: Arial, sans-serif;
+        ///        }
+        ///
+        ///        table.border {
+        ///            border-collapse: collapse;
+        ///        }
+        ///
+        ///        table.border th {
+        ///            padding: 5px;
+        ///            border: 1px solid black;
+        ///        }
+        ///
+        ///        table.border td {
+        ///            padding: 5px;
+        ///            border: 1px solid black;
+        ///        }
+        ///    &lt;/style&gt;
+        ///&lt;/head&gt;
+        ///&lt;body&gt;
+        ///   [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string Plantilla_kardex {
+            get {
+                return ResourceManager.GetString("Plantilla_kardex", resourceCulture);
+            }
+        }
     }
 }

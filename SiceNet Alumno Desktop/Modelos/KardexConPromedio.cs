@@ -14,7 +14,7 @@ namespace Modelos
 
     public class KardexEntry
     {
-        public object FecEsp { get; set; }
+        public string FecEsp { get; set; }
         public string ClvMat { get; set; }
         public string ClvOfiMat { get; set; }
         public string Materia { get; set; }

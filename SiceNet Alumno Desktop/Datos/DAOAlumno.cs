@@ -60,8 +60,10 @@ namespace Datos
             }
         }
 
+        
 
-        public async Task<AlumnoAcademico> getAllKardexConPromedio(HttpClient cliente, CookieContainer cookieContainer)
+
+        public async Task<KardexConPromedio> getAllKardexConPromedio(HttpClient cliente, CookieContainer cookieContainer)
         {
             string uri = DatosConexion.urlBase + "/ws/wsalumnos.asmx/getAllKardexConPromedioByAlumno?aluLineamiento=1";
             HttpResponseMessage respuesta = await cliente.GetAsync(uri);
@@ -73,8 +75,8 @@ namespace Datos
                 if (result.respuestaJson != null)
                 {
                     JsonDeserializer deserializerJson = new JsonDeserializer();
-                    AlumnoAcademico alumnoacademico = deserializerJson.deserializarJsonInfoAlumno(result.respuestaJson);
-                    return alumnoacademico;
+                    KardexConPromedio kardexconpromedio = deserializerJson.deserializarJsonKardex(result.respuestaJson);
+                    return kardexconpromedio;
                 }
                 else
                 {
@@ -84,6 +86,30 @@ namespace Datos
             else
             {
                 return null;
+            }
+        }
+
+        public async Task<string> getCerrarSesion(HttpClient cliente, CookieContainer cookieContainer)
+        {
+            string uri = DatosConexion.urlBase + "/ws/wsalumnos.asmx/cerrarSesion?";
+            HttpResponseMessage respuesta = await cliente.GetAsync(uri);
+            if (respuesta.IsSuccessStatusCode)
+            {
+                string cuerpoRespuesta = await respuesta.Content.ReadAsStringAsync();
+                XmlStringDeserializer deserializer = new XmlStringDeserializer();
+                XmlString result = deserializer.Deserialize(cuerpoRespuesta);
+                if (result.respuestaJson != null)
+                {
+                    return result.respuestaJson;
+                }
+                else
+                {
+                    return "";
+                }
+            }
+            else
+            {
+                return "";
             }
         }
     }

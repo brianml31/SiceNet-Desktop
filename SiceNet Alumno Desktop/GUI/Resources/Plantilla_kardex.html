@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Plantilla Kardex</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+            <td style="width:20%"></td>
+            <td style="width:80%">
+                <table style="width:100%">
+                    <tr>
+                        <td><h1 align="right" style="margin:0px">Instituto Tecnológico Superior del Sur de Guanajuato</h1></td>
+                    </tr>
+                    <tr align="left">
+                        <td><h2 align="right" style="margin:3px">Kardex</h2></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" height="20">
+                <hr />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;">
+                    <tr>
+                        <th colspan="2" style="background-color: #4CAF50; color: white; border: 1px solid #ddd; padding: 8px; text-align: left;">DATOS DEL ALUMNO</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px; background-color: #eafaf1; width:30%">NOMBRE DEL ALUMNO</td>
+                        <td style="border: 1px solid #ddd; padding: 8px; background-color: #eafaf1; width:70%">@NOMBRE_ALUMNO</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px; width:30%">NÚMERO DE CONTROL</td>
+                        <td style="border: 1px solid #ddd; padding: 8px; width:70%">@NO_CONTROL</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px; background-color: #eafaf1; width:30%">CARRERA</td>
+                        <td style="border: 1px solid #ddd; padding: 8px; background-color: #eafaf1; width:70%">@CARRERA</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px; width:30%">SEMESTRE ACTUAL</td>
+                        <td style="border: 1px solid #ddd; padding: 8px; width:70%">@SEMESTRE_ACTUAL</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" height="20">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;">
+                    <tr>
+                        <th colspan="2" style="background-color: #4CAF50; color: white; border: 1px solid #ddd; padding: 8px; text-align: left;">PROMEDIO</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px; background-color: #eafaf1; width:30%">PROMEDIO GENERAL</td>
+                        <td style="border: 1px solid #ddd; padding: 8px; background-color: #eafaf1; width:70%">@PROMEDIO_GENERAL</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px; width:30%">CREDITOS APROBADOS</td>
+                        <td style="border: 1px solid #ddd; padding: 8px; width:70%">@CREDITOS_APROBADOS</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px; background-color: #eafaf1; width:30%">MATERIAS CURSADAS</td>
+                        <td style="border: 1px solid #ddd; padding: 8px; background-color: #eafaf1; width:70%">@MATERIAS_CURSADAS</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px; width:30%">MATERIAS APROBADAS</td>
+                        <td style="border: 1px solid #ddd; padding: 8px; width:70%">@MATERIAS_APROBADAS</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" height="10">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table style="width:100%;">
+                    <thead>
+                        <tr style="background-color:#4CAF50; color:white;">
+                            <th rowspan="2" style="text-align: center;">CVE.</th>
+                            <th rowspan="2" style="text-align: center;">OFICIAL</th>
+                            <th rowspan="2" style="text-align: center;">MATERIA</th>
+                            <th rowspan="2" style="text-align: center;">CDTS</th>
+                            <th rowspan="2" style="text-align: center;">CALIF.</th>
+                            <th rowspan="2" style="text-align: center;">ACREDITACION</th>
+                            <th colspan="3" style="text-align: center;">ORDINARIO</th>
+                            <th colspan="3" style="text-align: center;">REPETICIÓN</th>
+                            <th colspan="3" style="text-align: center;">ESPECIAL</th>
+                        </tr>
+                        <tr style="background-color:#4CAF50; color:white;">
+                            <th style="text-align: center;">SEM</th>
+                            <th style="text-align: center;">PER</th>
+                            <th style="text-align: center;">AÑO</th>
+                            <th style="text-align: center;">SEM</th>
+                            <th style="text-align: center;">PER</th>
+                            <th style="text-align: center;">AÑO</th>
+                            <th style="text-align: center;">SEM</th>
+                            <th style="text-align: center;">PER</th>
+                            <th style="text-align: center;">AÑO</th>
+                        </tr>
+                    </thead>
+                    <tbody>                        
+                        @FILAS
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>

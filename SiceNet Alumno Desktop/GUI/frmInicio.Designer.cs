@@ -44,6 +44,7 @@
             this.lblFechaHora = new MaterialSkin.Controls.MaterialLabel();
             this.lbl_3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.lblCarrera = new MaterialSkin.Controls.MaterialLabel();
             this.lbl_2 = new MaterialSkin.Controls.MaterialLabel();
             this.lblNoControl = new MaterialSkin.Controls.MaterialLabel();
             this.lbl_1 = new MaterialSkin.Controls.MaterialLabel();
@@ -52,11 +53,26 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblITSUR = new System.Windows.Forms.Label();
             this.tabCardex = new System.Windows.Forms.TabPage();
-            this.lblCarrera = new MaterialSkin.Controls.MaterialLabel();
+            this.ListViewKardex = new MaterialSkin.Controls.MaterialListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
-            this.lblCardex = new MaterialSkin.Controls.MaterialLabel();
-            this.btnGenerarCardex = new MaterialSkin.Controls.MaterialButton();
-            this.materialListView1 = new MaterialSkin.Controls.MaterialListView();
+            this.btnGenerarKardex = new MaterialSkin.Controls.MaterialButton();
+            this.lblKardex = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblPromedioGeneral = new MaterialSkin.Controls.MaterialLabel();
+            this.lblCreditosAprobados = new MaterialSkin.Controls.MaterialLabel();
+            this.lblMateriasCursadas = new MaterialSkin.Controls.MaterialLabel();
+            this.tabCerrarSesion = new System.Windows.Forms.TabPage();
             this.TabsControlDrawer.SuspendLayout();
             this.tabInfoAlumno.SuspendLayout();
             this.materialCard3.SuspendLayout();
@@ -71,6 +87,7 @@
             // 
             this.TabsControlDrawer.Controls.Add(this.tabInfoAlumno);
             this.TabsControlDrawer.Controls.Add(this.tabCardex);
+            this.TabsControlDrawer.Controls.Add(this.tabCerrarSesion);
             this.TabsControlDrawer.Depth = 0;
             this.TabsControlDrawer.Location = new System.Drawing.Point(7, 68);
             this.TabsControlDrawer.MouseState = MaterialSkin.MouseState.HOVER;
@@ -294,6 +311,19 @@
             this.materialCard1.Size = new System.Drawing.Size(703, 163);
             this.materialCard1.TabIndex = 1;
             // 
+            // lblCarrera
+            // 
+            this.lblCarrera.AutoSize = true;
+            this.lblCarrera.Depth = 0;
+            this.lblCarrera.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblCarrera.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblCarrera.Location = new System.Drawing.Point(281, 120);
+            this.lblCarrera.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblCarrera.Name = "lblCarrera";
+            this.lblCarrera.Size = new System.Drawing.Size(46, 17);
+            this.lblCarrera.TabIndex = 6;
+            this.lblCarrera.Text = "#####";
+            // 
             // lbl_2
             // 
             this.lbl_2.AutoSize = true;
@@ -383,7 +413,7 @@
             // 
             // tabCardex
             // 
-            this.tabCardex.Controls.Add(this.materialListView1);
+            this.tabCardex.Controls.Add(this.ListViewKardex);
             this.tabCardex.Controls.Add(this.materialCard4);
             this.tabCardex.Location = new System.Drawing.Point(4, 22);
             this.tabCardex.Name = "tabCardex";
@@ -393,24 +423,91 @@
             this.tabCardex.Text = "Cardex";
             this.tabCardex.UseVisualStyleBackColor = true;
             // 
-            // lblCarrera
+            // ListViewKardex
             // 
-            this.lblCarrera.AutoSize = true;
-            this.lblCarrera.Depth = 0;
-            this.lblCarrera.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblCarrera.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.lblCarrera.Location = new System.Drawing.Point(281, 120);
-            this.lblCarrera.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblCarrera.Name = "lblCarrera";
-            this.lblCarrera.Size = new System.Drawing.Size(46, 17);
-            this.lblCarrera.TabIndex = 6;
-            this.lblCarrera.Text = "#####";
+            this.ListViewKardex.AutoSizeTable = false;
+            this.ListViewKardex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ListViewKardex.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ListViewKardex.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9});
+            this.ListViewKardex.Depth = 0;
+            this.ListViewKardex.FullRowSelect = true;
+            this.ListViewKardex.HideSelection = false;
+            this.ListViewKardex.Location = new System.Drawing.Point(14, 212);
+            this.ListViewKardex.MinimumSize = new System.Drawing.Size(200, 100);
+            this.ListViewKardex.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.ListViewKardex.MouseState = MaterialSkin.MouseState.OUT;
+            this.ListViewKardex.Name = "ListViewKardex";
+            this.ListViewKardex.OwnerDraw = true;
+            this.ListViewKardex.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ListViewKardex.Size = new System.Drawing.Size(696, 233);
+            this.ListViewKardex.TabIndex = 1;
+            this.ListViewKardex.UseCompatibleStateImageBehavior = false;
+            this.ListViewKardex.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "CVE.";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "OFICIAL";
+            this.columnHeader2.Width = 95;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "MATERIA";
+            this.columnHeader3.Width = 200;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "CDTS";
+            this.columnHeader4.Width = 70;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "CALIF";
+            this.columnHeader5.Width = 70;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "ACREDITACION";
+            this.columnHeader6.Width = 140;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "ORDINARIO (SEM/PER/AÑO)";
+            this.columnHeader7.Width = 225;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "REPETICION (SEM/PER/AÑO";
+            this.columnHeader8.Width = 225;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "ESPECIAL";
+            this.columnHeader9.Width = 225;
             // 
             // materialCard4
             // 
             this.materialCard4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard4.Controls.Add(this.btnGenerarCardex);
-            this.materialCard4.Controls.Add(this.lblCardex);
+            this.materialCard4.Controls.Add(this.lblMateriasCursadas);
+            this.materialCard4.Controls.Add(this.lblCreditosAprobados);
+            this.materialCard4.Controls.Add(this.lblPromedioGeneral);
+            this.materialCard4.Controls.Add(this.materialLabel5);
+            this.materialCard4.Controls.Add(this.materialLabel3);
+            this.materialCard4.Controls.Add(this.materialLabel1);
+            this.materialCard4.Controls.Add(this.btnGenerarKardex);
+            this.materialCard4.Controls.Add(this.lblKardex);
             this.materialCard4.Depth = 0;
             this.materialCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard4.Location = new System.Drawing.Point(14, 14);
@@ -418,59 +515,129 @@
             this.materialCard4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard4.Name = "materialCard4";
             this.materialCard4.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard4.Size = new System.Drawing.Size(696, 107);
+            this.materialCard4.Size = new System.Drawing.Size(696, 181);
             this.materialCard4.TabIndex = 0;
             // 
-            // lblCardex
+            // btnGenerarKardex
             // 
-            this.lblCardex.AutoSize = true;
-            this.lblCardex.Depth = 0;
-            this.lblCardex.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblCardex.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.lblCardex.Location = new System.Drawing.Point(288, 10);
-            this.lblCardex.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblCardex.Name = "lblCardex";
-            this.lblCardex.Size = new System.Drawing.Size(108, 41);
-            this.lblCardex.TabIndex = 0;
-            this.lblCardex.Text = "Cardex";
+            this.btnGenerarKardex.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGenerarKardex.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnGenerarKardex.Depth = 0;
+            this.btnGenerarKardex.HighEmphasis = true;
+            this.btnGenerarKardex.Icon = null;
+            this.btnGenerarKardex.Location = new System.Drawing.Point(252, 137);
+            this.btnGenerarKardex.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnGenerarKardex.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnGenerarKardex.Name = "btnGenerarKardex";
+            this.btnGenerarKardex.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnGenerarKardex.Size = new System.Drawing.Size(177, 36);
+            this.btnGenerarKardex.TabIndex = 1;
+            this.btnGenerarKardex.Text = "Generar kardex PDF";
+            this.btnGenerarKardex.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnGenerarKardex.UseAccentColor = false;
+            this.btnGenerarKardex.UseVisualStyleBackColor = true;
+            this.btnGenerarKardex.Click += new System.EventHandler(this.btnGenerarKardex_Click);
             // 
-            // btnGenerarCardex
+            // lblKardex
             // 
-            this.btnGenerarCardex.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnGenerarCardex.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnGenerarCardex.Depth = 0;
-            this.btnGenerarCardex.HighEmphasis = true;
-            this.btnGenerarCardex.Icon = null;
-            this.btnGenerarCardex.Location = new System.Drawing.Point(255, 61);
-            this.btnGenerarCardex.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnGenerarCardex.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnGenerarCardex.Name = "btnGenerarCardex";
-            this.btnGenerarCardex.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnGenerarCardex.Size = new System.Drawing.Size(177, 36);
-            this.btnGenerarCardex.TabIndex = 1;
-            this.btnGenerarCardex.Text = "Generar cardex PDF";
-            this.btnGenerarCardex.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnGenerarCardex.UseAccentColor = false;
-            this.btnGenerarCardex.UseVisualStyleBackColor = true;
+            this.lblKardex.AutoSize = true;
+            this.lblKardex.Depth = 0;
+            this.lblKardex.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblKardex.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.lblKardex.Location = new System.Drawing.Point(288, 10);
+            this.lblKardex.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblKardex.Name = "lblKardex";
+            this.lblKardex.Size = new System.Drawing.Size(107, 41);
+            this.lblKardex.TabIndex = 0;
+            this.lblKardex.Text = "Kardex";
             // 
-            // materialListView1
+            // materialLabel1
             // 
-            this.materialListView1.AutoSizeTable = false;
-            this.materialListView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialListView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialListView1.Depth = 0;
-            this.materialListView1.FullRowSelect = true;
-            this.materialListView1.HideSelection = false;
-            this.materialListView1.Location = new System.Drawing.Point(14, 129);
-            this.materialListView1.MinimumSize = new System.Drawing.Size(200, 100);
-            this.materialListView1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialListView1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialListView1.Name = "materialListView1";
-            this.materialListView1.OwnerDraw = true;
-            this.materialListView1.Size = new System.Drawing.Size(200, 100);
-            this.materialListView1.TabIndex = 1;
-            this.materialListView1.UseCompatibleStateImageBehavior = false;
-            this.materialListView1.View = System.Windows.Forms.View.Details;
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.materialLabel1.Location = new System.Drawing.Point(175, 54);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(122, 17);
+            this.materialLabel1.TabIndex = 4;
+            this.materialLabel1.Text = "Promedio general: ";
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.materialLabel3.Location = new System.Drawing.Point(171, 109);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(126, 17);
+            this.materialLabel3.TabIndex = 6;
+            this.materialLabel3.Text = "Materias cursadas: ";
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel5.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.materialLabel5.Location = new System.Drawing.Point(164, 81);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(133, 17);
+            this.materialLabel5.TabIndex = 7;
+            this.materialLabel5.Text = "Creditos aprobados: ";
+            // 
+            // lblPromedioGeneral
+            // 
+            this.lblPromedioGeneral.AutoSize = true;
+            this.lblPromedioGeneral.Depth = 0;
+            this.lblPromedioGeneral.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblPromedioGeneral.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblPromedioGeneral.Location = new System.Drawing.Point(303, 54);
+            this.lblPromedioGeneral.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblPromedioGeneral.Name = "lblPromedioGeneral";
+            this.lblPromedioGeneral.Size = new System.Drawing.Size(46, 17);
+            this.lblPromedioGeneral.TabIndex = 8;
+            this.lblPromedioGeneral.Text = "#####";
+            // 
+            // lblCreditosAprobados
+            // 
+            this.lblCreditosAprobados.AutoSize = true;
+            this.lblCreditosAprobados.Depth = 0;
+            this.lblCreditosAprobados.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblCreditosAprobados.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblCreditosAprobados.Location = new System.Drawing.Point(303, 81);
+            this.lblCreditosAprobados.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblCreditosAprobados.Name = "lblCreditosAprobados";
+            this.lblCreditosAprobados.Size = new System.Drawing.Size(46, 17);
+            this.lblCreditosAprobados.TabIndex = 9;
+            this.lblCreditosAprobados.Text = "#####";
+            // 
+            // lblMateriasCursadas
+            // 
+            this.lblMateriasCursadas.AutoSize = true;
+            this.lblMateriasCursadas.Depth = 0;
+            this.lblMateriasCursadas.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblMateriasCursadas.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblMateriasCursadas.Location = new System.Drawing.Point(303, 111);
+            this.lblMateriasCursadas.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblMateriasCursadas.Name = "lblMateriasCursadas";
+            this.lblMateriasCursadas.Size = new System.Drawing.Size(46, 17);
+            this.lblMateriasCursadas.TabIndex = 10;
+            this.lblMateriasCursadas.Text = "#####";
+            // 
+            // tabCerrarSesion
+            // 
+            this.tabCerrarSesion.Location = new System.Drawing.Point(4, 22);
+            this.tabCerrarSesion.Name = "tabCerrarSesion";
+            this.tabCerrarSesion.Padding = new System.Windows.Forms.Padding(3);
+            this.tabCerrarSesion.Size = new System.Drawing.Size(724, 451);
+            this.tabCerrarSesion.TabIndex = 2;
+            this.tabCerrarSesion.Text = "Cerrar Sesion";
+            this.tabCerrarSesion.UseVisualStyleBackColor = true;
             // 
             // frmInicio
             // 
@@ -525,10 +692,26 @@
         private MaterialSkin.Controls.MaterialLabel lbl_4;
         private MaterialSkin.Controls.MaterialLabel lbl_2;
         private MaterialSkin.Controls.MaterialLabel lblCarrera;
-        private MaterialSkin.Controls.MaterialListView materialListView1;
+        private MaterialSkin.Controls.MaterialListView ListViewKardex;
         private MaterialSkin.Controls.MaterialCard materialCard4;
-        private MaterialSkin.Controls.MaterialButton btnGenerarCardex;
-        private MaterialSkin.Controls.MaterialLabel lblCardex;
+        private MaterialSkin.Controls.MaterialButton btnGenerarKardex;
+        private MaterialSkin.Controls.MaterialLabel lblKardex;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private MaterialSkin.Controls.MaterialLabel materialLabel5;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialLabel lblMateriasCursadas;
+        private MaterialSkin.Controls.MaterialLabel lblCreditosAprobados;
+        private MaterialSkin.Controls.MaterialLabel lblPromedioGeneral;
+        private System.Windows.Forms.TabPage tabCerrarSesion;
     }
 }
 

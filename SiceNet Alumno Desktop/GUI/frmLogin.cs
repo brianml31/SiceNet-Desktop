@@ -46,8 +46,6 @@ namespace GUI
                 Alumno alumno = new Alumno(txtNoControl.Text, txtContrasena.Text);
                 if (await new DAOAlumno().getInicioSesion(cliente, cookieContainer, alumno))
                 {
-                    //frmInfoAlumno frminfoalumno = new frmInfoAlumno(cliente, cookieContainer);
-                    //frminfoalumno.Show();
                     frmInicio frminicio = new frmInicio(cliente, cookieContainer);
                     frminicio.Show();
                     this.Hide();
