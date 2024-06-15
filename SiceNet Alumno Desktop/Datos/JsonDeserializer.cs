@@ -22,6 +22,11 @@ namespace Datos
             return JsonConvert.DeserializeObject<AlumnoAcademico>(json);
         }
 
+        public List<CalificacionesFinales> deserializarJsonCalifFinales(string json)
+        {
+            return JsonConvert.DeserializeObject<List<CalificacionesFinales>>(json);
+        }
+
         public KardexConPromedio deserializarJsonKardex(string json)
         {
             return JsonConvert.DeserializeObject<KardexConPromedio>(json);

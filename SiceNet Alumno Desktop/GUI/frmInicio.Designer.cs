@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TabsControlDrawer = new MaterialSkin.Controls.MaterialTabControl();
             this.tabInfoAlumno = new System.Windows.Forms.TabPage();
             this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
@@ -64,14 +67,21 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
+            this.lblMateriasCursadas = new MaterialSkin.Controls.MaterialLabel();
+            this.lblCreditosAprobados = new MaterialSkin.Controls.MaterialLabel();
+            this.lblPromedioGeneral = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.btnGenerarKardex = new MaterialSkin.Controls.MaterialButton();
             this.lblKardex = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
-            this.lblPromedioGeneral = new MaterialSkin.Controls.MaterialLabel();
-            this.lblCreditosAprobados = new MaterialSkin.Controls.MaterialLabel();
-            this.lblMateriasCursadas = new MaterialSkin.Controls.MaterialLabel();
+            this.tabCalificacionesFinales = new System.Windows.Forms.TabPage();
+            this.dataGridViewCalifFinales = new System.Windows.Forms.DataGridView();
+            this.columnMateria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnCalifFinal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnAcreditacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.tabCerrarSesion = new System.Windows.Forms.TabPage();
             this.TabsControlDrawer.SuspendLayout();
             this.tabInfoAlumno.SuspendLayout();
@@ -81,12 +91,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabCardex.SuspendLayout();
             this.materialCard4.SuspendLayout();
+            this.tabCalificacionesFinales.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCalifFinales)).BeginInit();
+            this.materialCard5.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabsControlDrawer
             // 
             this.TabsControlDrawer.Controls.Add(this.tabInfoAlumno);
             this.TabsControlDrawer.Controls.Add(this.tabCardex);
+            this.TabsControlDrawer.Controls.Add(this.tabCalificacionesFinales);
             this.TabsControlDrawer.Controls.Add(this.tabCerrarSesion);
             this.TabsControlDrawer.Depth = 0;
             this.TabsControlDrawer.Location = new System.Drawing.Point(7, 68);
@@ -518,6 +532,84 @@
             this.materialCard4.Size = new System.Drawing.Size(696, 181);
             this.materialCard4.TabIndex = 0;
             // 
+            // lblMateriasCursadas
+            // 
+            this.lblMateriasCursadas.AutoSize = true;
+            this.lblMateriasCursadas.Depth = 0;
+            this.lblMateriasCursadas.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblMateriasCursadas.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblMateriasCursadas.Location = new System.Drawing.Point(303, 111);
+            this.lblMateriasCursadas.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblMateriasCursadas.Name = "lblMateriasCursadas";
+            this.lblMateriasCursadas.Size = new System.Drawing.Size(46, 17);
+            this.lblMateriasCursadas.TabIndex = 10;
+            this.lblMateriasCursadas.Text = "#####";
+            // 
+            // lblCreditosAprobados
+            // 
+            this.lblCreditosAprobados.AutoSize = true;
+            this.lblCreditosAprobados.Depth = 0;
+            this.lblCreditosAprobados.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblCreditosAprobados.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblCreditosAprobados.Location = new System.Drawing.Point(303, 81);
+            this.lblCreditosAprobados.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblCreditosAprobados.Name = "lblCreditosAprobados";
+            this.lblCreditosAprobados.Size = new System.Drawing.Size(46, 17);
+            this.lblCreditosAprobados.TabIndex = 9;
+            this.lblCreditosAprobados.Text = "#####";
+            // 
+            // lblPromedioGeneral
+            // 
+            this.lblPromedioGeneral.AutoSize = true;
+            this.lblPromedioGeneral.Depth = 0;
+            this.lblPromedioGeneral.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblPromedioGeneral.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.lblPromedioGeneral.Location = new System.Drawing.Point(303, 54);
+            this.lblPromedioGeneral.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblPromedioGeneral.Name = "lblPromedioGeneral";
+            this.lblPromedioGeneral.Size = new System.Drawing.Size(46, 17);
+            this.lblPromedioGeneral.TabIndex = 8;
+            this.lblPromedioGeneral.Text = "#####";
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel5.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.materialLabel5.Location = new System.Drawing.Point(164, 81);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(133, 17);
+            this.materialLabel5.TabIndex = 7;
+            this.materialLabel5.Text = "Creditos aprobados: ";
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.materialLabel3.Location = new System.Drawing.Point(171, 109);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(126, 17);
+            this.materialLabel3.TabIndex = 6;
+            this.materialLabel3.Text = "Materias cursadas: ";
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.materialLabel1.Location = new System.Drawing.Point(175, 54);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(122, 17);
+            this.materialLabel1.TabIndex = 4;
+            this.materialLabel1.Text = "Promedio general: ";
+            // 
             // btnGenerarKardex
             // 
             this.btnGenerarKardex.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -551,83 +643,106 @@
             this.lblKardex.TabIndex = 0;
             this.lblKardex.Text = "Kardex";
             // 
-            // materialLabel1
+            // tabCalificacionesFinales
             // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.materialLabel1.Location = new System.Drawing.Point(175, 54);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(122, 17);
-            this.materialLabel1.TabIndex = 4;
-            this.materialLabel1.Text = "Promedio general: ";
+            this.tabCalificacionesFinales.Controls.Add(this.dataGridViewCalifFinales);
+            this.tabCalificacionesFinales.Controls.Add(this.materialCard5);
+            this.tabCalificacionesFinales.Location = new System.Drawing.Point(4, 22);
+            this.tabCalificacionesFinales.Name = "tabCalificacionesFinales";
+            this.tabCalificacionesFinales.Size = new System.Drawing.Size(724, 451);
+            this.tabCalificacionesFinales.TabIndex = 3;
+            this.tabCalificacionesFinales.Text = "Calif. Finales";
+            this.tabCalificacionesFinales.UseVisualStyleBackColor = true;
             // 
-            // materialLabel3
+            // dataGridViewCalifFinales
             // 
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.materialLabel3.Location = new System.Drawing.Point(171, 109);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(126, 17);
-            this.materialLabel3.TabIndex = 6;
-            this.materialLabel3.Text = "Materias cursadas: ";
+            this.dataGridViewCalifFinales.AllowUserToAddRows = false;
+            this.dataGridViewCalifFinales.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewCalifFinales.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewCalifFinales.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridViewCalifFinales.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(125)))), ((int)(((byte)(50)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(125)))), ((int)(((byte)(50)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCalifFinales.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewCalifFinales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCalifFinales.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.columnMateria,
+            this.columnCalifFinal,
+            this.columnAcreditacion});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(227)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(227)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewCalifFinales.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewCalifFinales.EnableHeadersVisualStyles = false;
+            this.dataGridViewCalifFinales.Location = new System.Drawing.Point(122, 114);
+            this.dataGridViewCalifFinales.Name = "dataGridViewCalifFinales";
+            this.dataGridViewCalifFinales.ReadOnly = true;
+            this.dataGridViewCalifFinales.RowHeadersVisible = false;
+            this.dataGridViewCalifFinales.Size = new System.Drawing.Size(458, 150);
+            this.dataGridViewCalifFinales.TabIndex = 3;
             // 
-            // materialLabel5
+            // columnMateria
             // 
-            this.materialLabel5.AutoSize = true;
-            this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel5.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.materialLabel5.Location = new System.Drawing.Point(164, 81);
-            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(133, 17);
-            this.materialLabel5.TabIndex = 7;
-            this.materialLabel5.Text = "Creditos aprobados: ";
+            this.columnMateria.Frozen = true;
+            this.columnMateria.HeaderText = "Materia";
+            this.columnMateria.Name = "columnMateria";
+            this.columnMateria.ReadOnly = true;
+            this.columnMateria.Width = 200;
             // 
-            // lblPromedioGeneral
+            // columnCalifFinal
             // 
-            this.lblPromedioGeneral.AutoSize = true;
-            this.lblPromedioGeneral.Depth = 0;
-            this.lblPromedioGeneral.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblPromedioGeneral.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.lblPromedioGeneral.Location = new System.Drawing.Point(303, 54);
-            this.lblPromedioGeneral.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblPromedioGeneral.Name = "lblPromedioGeneral";
-            this.lblPromedioGeneral.Size = new System.Drawing.Size(46, 17);
-            this.lblPromedioGeneral.TabIndex = 8;
-            this.lblPromedioGeneral.Text = "#####";
+            this.columnCalifFinal.Frozen = true;
+            this.columnCalifFinal.HeaderText = "Calif. Final";
+            this.columnCalifFinal.Name = "columnCalifFinal";
+            this.columnCalifFinal.ReadOnly = true;
+            this.columnCalifFinal.Width = 130;
             // 
-            // lblCreditosAprobados
+            // columnAcreditacion
             // 
-            this.lblCreditosAprobados.AutoSize = true;
-            this.lblCreditosAprobados.Depth = 0;
-            this.lblCreditosAprobados.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblCreditosAprobados.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.lblCreditosAprobados.Location = new System.Drawing.Point(303, 81);
-            this.lblCreditosAprobados.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblCreditosAprobados.Name = "lblCreditosAprobados";
-            this.lblCreditosAprobados.Size = new System.Drawing.Size(46, 17);
-            this.lblCreditosAprobados.TabIndex = 9;
-            this.lblCreditosAprobados.Text = "#####";
+            this.columnAcreditacion.Frozen = true;
+            this.columnAcreditacion.HeaderText = "Acreditación";
+            this.columnAcreditacion.Name = "columnAcreditacion";
+            this.columnAcreditacion.ReadOnly = true;
+            this.columnAcreditacion.Width = 125;
             // 
-            // lblMateriasCursadas
+            // materialCard5
             // 
-            this.lblMateriasCursadas.AutoSize = true;
-            this.lblMateriasCursadas.Depth = 0;
-            this.lblMateriasCursadas.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblMateriasCursadas.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.lblMateriasCursadas.Location = new System.Drawing.Point(303, 111);
-            this.lblMateriasCursadas.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblMateriasCursadas.Name = "lblMateriasCursadas";
-            this.lblMateriasCursadas.Size = new System.Drawing.Size(46, 17);
-            this.lblMateriasCursadas.TabIndex = 10;
-            this.lblMateriasCursadas.Text = "#####";
+            this.materialCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard5.Controls.Add(this.materialLabel11);
+            this.materialCard5.Depth = 0;
+            this.materialCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard5.Location = new System.Drawing.Point(14, 14);
+            this.materialCard5.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard5.Name = "materialCard5";
+            this.materialCard5.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard5.Size = new System.Drawing.Size(696, 66);
+            this.materialCard5.TabIndex = 1;
+            // 
+            // materialLabel11
+            // 
+            this.materialLabel11.AutoSize = true;
+            this.materialLabel11.Depth = 0;
+            this.materialLabel11.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel11.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.materialLabel11.Location = new System.Drawing.Point(171, 10);
+            this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel11.Name = "materialLabel11";
+            this.materialLabel11.Size = new System.Drawing.Size(332, 41);
+            this.materialLabel11.TabIndex = 0;
+            this.materialLabel11.Text = "Calificaciones Finales";
             // 
             // tabCerrarSesion
             // 
@@ -661,6 +776,10 @@
             this.tabCardex.ResumeLayout(false);
             this.materialCard4.ResumeLayout(false);
             this.materialCard4.PerformLayout();
+            this.tabCalificacionesFinales.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCalifFinales)).EndInit();
+            this.materialCard5.ResumeLayout(false);
+            this.materialCard5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -712,6 +831,13 @@
         private MaterialSkin.Controls.MaterialLabel lblCreditosAprobados;
         private MaterialSkin.Controls.MaterialLabel lblPromedioGeneral;
         private System.Windows.Forms.TabPage tabCerrarSesion;
+        private System.Windows.Forms.TabPage tabCalificacionesFinales;
+        private MaterialSkin.Controls.MaterialCard materialCard5;
+        private MaterialSkin.Controls.MaterialLabel materialLabel11;
+        private System.Windows.Forms.DataGridView dataGridViewCalifFinales;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnMateria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnCalifFinal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnAcreditacion;
     }
 }
 

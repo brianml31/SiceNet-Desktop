@@ -12,6 +12,7 @@ using System.Xml.Linq;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.tool.xml;
+using System.Collections.Generic;
 
 namespace GUI
 {
@@ -108,6 +109,20 @@ namespace GUI
                     }
                     break;
                 case 2:
+                    List<CalificacionesFinales> listCalifFinales = await new DAOAlumno().getCalifFinales(cliente, cookieContainer);
+                    if (listCalifFinales != null || listCalifFinales.Count != 0)
+                    {
+  
+                        
+                        foreach (var elementoCalifFinales in listCalifFinales)
+                        {
+
+                            dataGridViewCalifFinales.Rows.Add(elementoCalifFinales.materia, elementoCalifFinales.calif.ToString(), elementoCalifFinales.acred);
+                        }
+                        
+                    }
+                    break;
+                case 3:
                     if ("finalizada".Equals(await new DAOAlumno().getCerrarSesion(cliente, cookieContainer))) {
                         frmLogin frmlogin = new frmLogin();
                         frmlogin.Show();
@@ -178,7 +193,6 @@ namespace GUI
                     pdfDoc.Close();
                     stream.Close();
                 }
-
             }
         }
     }
